@@ -90,10 +90,10 @@ class DragDropWindow(QMainWindow):
         msg.setIcon(QMessageBox.Icon.Warning)
         
         # Set custom icon
-        msg.setIconPixmap(QIcon("assets/logo.webp").pixmap(64, 64))
+        msg.setIconPixmap(QIcon("assets/error.png").pixmap(64, 64))
         
         msg.setWindowTitle("Invalid File Type")
-        msg.setText("Only files with the .mxl extension are allowed! Export it with MuseScore")
+        msg.setText("Only files with the .mxl extension are allowed!\n\nExport it with MuseScore 📁")
         msg.setStandardButtons(QMessageBox.StandardButton.Ok)
         msg.exec()
 
